@@ -1,0 +1,77 @@
+{
+  "name": "blockchain-evidence-archive-system",
+  "version": "1.0.0",
+  "description": "A secure blockchain-based evidence management system for law enforcement and court officials",
+  "main": "public/app.js",
+  "scripts": {
+    "start": "http-server public -p 3000 -c-1",
+    "dev": "http-server public -p 3000 -c-1 -o",
+    "build": "truffle compile",
+    "deploy": "truffle migrate",
+    "deploy:rinkeby": "truffle migrate --network rinkeby",
+    "deploy:mainnet": "truffle migrate --network mainnet",
+    "test": "truffle test",
+    "clean": "truffle clean",
+    "console": "truffle console",
+    "lint": "eslint public/*.js",
+    "lint:fix": "eslint public/*.js --fix"
+  },
+  "keywords": [
+    "blockchain",
+    "evidence",
+    "archive",
+    "ethereum",
+    "ipfs",
+    "law-enforcement",
+    "court",
+    "security",
+    "immutable",
+    "transparent"
+  ],
+  "author": {
+    "name": "Aryan Patil",
+    "email": "aryanpatil97@gmail.com",
+    "url": "https://github.com/aryanpatil97"
+  },
+  "contributors": [
+    {
+      "name": "Tanmay Sadanshiv",
+      "role": "Blockchain Developer"
+    },
+    {
+      "name": "Shreyash Trimbake",
+      "role": "Frontend Developer"
+    },
+    {
+      "name": "Shivam Naladkar",
+      "role": "UI/UX Designer"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aryanpatil97/Blockchain-Evidence-Archive-System.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aryanpatil97/Blockchain-Evidence-Archive-System/issues"
+  },
+  "homepage": "https://github.com/aryanpatil97/Blockchain-Evidence-Archive-System#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "truffle": "^5.8.0",
+    "eslint": "^8.0.0"
+  },
+  "dependencies": {
+    "web3": "^1.8.0",
+    "ipfs-http-client": "^56.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
