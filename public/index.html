@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEAS — Blockchain Evidence Archive System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/ipfs-http-client/dist/index.min.js"></script>
+    <meta name="description" content="BEAS - A secure blockchain-based evidence archive system for law enforcement and court officials">
+    <meta name="keywords" content="blockchain, evidence, archive, law enforcement, court, security, IPFS">
+    <meta name="author" content="Aryan Patil">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="auth-container">
+            <!-- Header with Logo and Branding -->
+            <div class="auth-header">
+                <div class="logo-container">
+                    <i class="fas fa-shield-alt logo-icon"></i>
+                    <h1 class="brand">BEAS</h1>
+                </div>
+                <p class="brand-sub">Blockchain Evidence Archive System</p>
+                <p class="brand-description">Secure • Immutable • Transparent</p>
+            </div>
+
+            <!-- Feature Highlights -->
+            <div class="feature-highlights">
+                <div class="feature-item">
+                    <i class="fas fa-lock"></i>
+                    <span>End-to-End Security</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-link"></i>
+                    <span>Blockchain Immutability</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-eye"></i>
+                    <span>Transparent Verification</span>
+                </div>
+            </div>
+            
+            <div class="tabs">
+                <button class="tab-btn active" id="login-tab">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>Login</span>
+                </button>
+                <button class="tab-btn" id="register-tab">
+                    <i class="fas fa-user-plus"></i>
+                    <span>Register</span>
+                </button>
+            </div>
+            
+            <div class="form-container" id="login-form">
+                <h2><i class="fas fa-sign-in-alt"></i> Login to Your Account</h2>
+                <div class="form-group">
+                    <label for="login-address">
+                        <i class="fas fa-wallet"></i>
+                        Ethereum Address:
+                    </label>
+                    <input type="text" id="login-address" placeholder="Your Ethereum address" readonly>
+                </div>
+                <div class="form-group">
+                    <button id="connect-metamask" class="btn primary-btn">
+                        <i class="fab fa-ethereum"></i>
+                        Connect with MetaMask
+                    </button>
+                </div>
+                <div class="form-group">
+                    <button id="login-btn" class="btn success-btn" disabled>
+                        <i class="fas fa-sign-in-alt"></i>
+                        Login
+                    </button>
+                </div>
+                <div id="login-message" class="message"></div>
+            </div>
+            
+            <div class="form-container hidden" id="register-form">
+                <h2><i class="fas fa-user-plus"></i> Create New Account</h2>
+                <div class="form-group">
+                    <label for="register-address">
+                        <i class="fas fa-wallet"></i>
+                        Ethereum Address:
+                    </label>
+                    <input type="text" id="register-address" placeholder="Your Ethereum address" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="fullname">
+                        <i class="fas fa-user"></i>
+                        Full Name:
+                    </label>
+                    <input type="text" id="fullname" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="role">
+                        <i class="fas fa-briefcase"></i>
+                        Role:
+                    </label>
+                    <select id="role">
+                        <option value="">Select Role</option>
+                        <option value="Police">
+                            <i class="fas fa-shield-alt"></i> Police Officer
+                        </option>
+                        <option value="Court">
+                            <i class="fas fa-gavel"></i> Court Official
+                        </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button id="register-connect-metamask" class="btn primary-btn">
+                        <i class="fab fa-ethereum"></i>
+                        Connect with MetaMask
+                    </button>
+                </div>
+                <div class="form-group">
+                    <button id="register-btn" class="btn success-btn" disabled>
+                        <i class="fas fa-user-plus"></i>
+                        Register
+                    </button>
+                </div>
+                <div id="register-message" class="message"></div>
+            </div>
+
+            <!-- Footer -->
+            <div class="auth-footer">
+                <p>&copy; 2025 BEAS. Built with <i class="fas fa-heart"></i> by Aryan Patil</p>
+                <div class="tech-stack">
+                    <span>Powered by</span>
+                    <i class="fab fa-ethereum" title="Ethereum"></i>
+                    <i class="fas fa-cube" title="IPFS"></i>
+                    <i class="fas fa-shield-alt" title="Blockchain Security"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

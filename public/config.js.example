@@ -1,0 +1,21 @@
+// Configuration template for BEAS (Blockchain Evidence Archive System)
+// Copy this file to config.js and update with your actual API keys
+
+var config = {
+    // Pinata IPFS Configuration
+    // Get your API keys from: https://pinata.cloud/
+    PINATA_API_KEY: 'YOUR_PINATA_API_KEY_HERE',
+    PINATA_SECRET_API_KEY: 'YOUR_PINATA_SECRET_API_KEY_HERE',
+    
+    // Optional: JWT token for enhanced security
+    JWT: 'YOUR_JWT_TOKEN_HERE'
+};
+
+// Environment-specific configuration
+if (typeof window !== 'undefined') {
+    // Browser environment - check for environment variables or use defaults
+    if (config.PINATA_API_KEY === 'YOUR_PINATA_API_KEY_HERE') {
+        console.warn('⚠️  Pinata API keys not configured. Please update config.js with your actual API keys.');
+        console.warn('📝 Get your API keys from: https://pinata.cloud/');
+    }
+}
