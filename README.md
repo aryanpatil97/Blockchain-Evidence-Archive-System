@@ -235,10 +235,7 @@ We welcome contributions from the community! Please follow these steps:
 
 ## 👥 Contributors
 
-### **Main Contributor**
-- **Aryan Patil** - *Project Lead & Full-Stack Developer* - [@aryanpatil97](https://github.com/aryanpatil97)
-
-### **Supporting Contributors**
+- **Aryan Patil** - *Full-Stack Developer* - [@aryanpatil97](https://github.com/aryanpatil97)
 - **Tanmay Sadanshiv** - *Blockchain Developer*
 - **Shreyash Trimbake** - *Frontend Developer*
 - **Shivam Naladkar** - *UI/UX Designer*
@@ -275,7 +272,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-For support, email aryanpatil97@gmail.com or create an issue in the repository.
+For support, email aryanpatil1611@gmail.com or create an issue in the repository.
 
 ## 🙏 Acknowledgments
 
