@@ -53,13 +53,17 @@ BEAS (Blockchain Evidence Archive System) is a revolutionary platform that lever
 
 ## 🚀 Getting Started
 
+> **📚 NEW USERS:** For a complete step-by-step guide from scratch, see **[SETUP_GUIDE.md](SETUP_GUIDE.md)** - This includes MetaMask setup, Ganache configuration, Pinata setup, and all terminal commands.
+>
+> **⚡ QUICK REFERENCE:** For a condensed version, see **[QUICK_START.md](QUICK_START.md)**.
+
 ### **Prerequisites**
 - Node.js (v14 or higher)
 - MetaMask browser extension
 - Git
 - Modern web browser (Chrome, Firefox, Safari, Edge)
 
-### **Installation**
+### **Quick Installation**
 
 1. **Clone the Repository**
    ```bash
@@ -86,6 +90,18 @@ BEAS (Blockchain Evidence Archive System) is a revolutionary platform that lever
    ```bash
    npm start
    ```
+
+### **📖 Detailed Setup Instructions**
+
+For complete setup instructions including:
+- ✅ MetaMask wallet creation and configuration
+- ✅ Ganache local blockchain setup
+- ✅ Pinata IPFS account setup
+- ✅ Step-by-step deployment process
+- ✅ Testing the complete workflow
+- ✅ Troubleshooting common issues
+
+**See [SETUP_GUIDE.md](SETUP_GUIDE.md) for comprehensive instructions.**
 
 ### **Configuration**
 
